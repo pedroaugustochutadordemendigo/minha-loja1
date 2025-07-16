@@ -1,0 +1,8 @@
+nohup: ignoring input
+🚀 Iniciando servidor Flask em http://0.0.0.0:5000
+📊 Modo debug: True
+🌍 Ambiente: development
+ * Serving Flask app 'app'
+ * Debug mode: on
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.

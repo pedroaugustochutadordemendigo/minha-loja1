@@ -1,0 +1,46 @@
+{
+  "name": "packs-ecommerce",
+  "version": "1.0.0",
+  "description": "E-commerce de streetwear autêntico com design moderno e funcionalidades completas",
+  "main": "index.js",
+  "scripts": {
+    "setup": "chmod +x scripts/*.sh && ./scripts/setup.sh",
+    "dev": "chmod +x scripts/dev.sh && ./scripts/dev.sh",
+    "build": "chmod +x scripts/build.sh && ./scripts/build.sh",
+    "frontend": "cd frontend && npm run dev -- --host",
+    "backend": "cd backend && python run.py",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:install": "cd frontend && npm install",
+    "backend:install": "cd backend && pip install -r requirements.txt",
+    "install:all": "npm run frontend:install && npm run backend:install",
+    "clean": "rm -rf frontend/dist frontend/node_modules backend/venv backend/__pycache__ backend/app/__pycache__",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecommerce",
+    "streetwear",
+    "react",
+    "flask",
+    "fashion",
+    "urban",
+    "clothing"
+  ],
+  "author": "PACKS Streetwear",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/packs-streetwear/ecommerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/packs-streetwear/ecommerce/issues"
+  },
+  "homepage": "https://packs.com.br",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0",
+    "python": ">=3.8.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
+
